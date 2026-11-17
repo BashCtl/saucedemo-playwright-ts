@@ -44,4 +44,8 @@ export class InventoryPage extends BasePage {
   async removeProduct(name: string): Promise<void> {
     await this.item(name).removeButton.click();
   }
+
+  async openProduct(name: string): Promise<void> {
+    await this.item(name).name.click();
+  }
 }
