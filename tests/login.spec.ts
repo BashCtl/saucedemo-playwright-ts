@@ -1,6 +1,8 @@
 import { test, expect } from "../src/fixtures/test-fixtures";
 import { users } from "../src/data/users";
 
+test.use({ storageState: { cookies: [], origins: [] } });
+
 test.describe("Login", { tag: "@login" }, () => {
   test.beforeEach(async ({ loginPage }) => {
     await loginPage.open();
