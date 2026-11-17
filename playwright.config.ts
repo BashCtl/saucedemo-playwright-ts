@@ -18,14 +18,11 @@ export default defineConfig({
     video: "retain-on-failure",
   },
   projects: [
-    { name: "setup", testMatch: /.*\.setup\.ts/ },
     {
       name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
-        storageState: ".auth/standard-user.json",
       },
-      dependencies: ["setup"],
     },
   ],
 });

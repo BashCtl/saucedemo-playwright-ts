@@ -3,15 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "type": "commonjs",
-  "devDependencies": {
-    "@faker-js/faker": "^10.6.0",
-    "@playwright/test": "^1.65.1",
-    "@types/node": "^26.6.6",
-    "dotenv": "^18.0.10"
-  },
   "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test --ui",
@@ -20,5 +11,13 @@
     "test:smoke": "playwright test --grep @smoke",
     "report": "playwright show-report",
     "lint": "eslint ."
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "dotenv": "^18.0.10"
   }
 }
