@@ -1,7 +1,7 @@
 import { test, expect } from "../src/fixtures/test-fixtures";
 import { products, sortedProduts } from "../src/data/products";
 
-test.describe("Inventory", { tag: "@inventory" }, () => {
+test.describe("Product", { tag: "@product" }, () => {
   test.beforeEach(async ({ inventoryPage }) => {
     await inventoryPage.open();
   });
