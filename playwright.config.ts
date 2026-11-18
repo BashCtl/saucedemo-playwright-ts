@@ -29,5 +29,14 @@ export default defineConfig({
       dependencies: ["setup"],
       testIgnore: /.*\.setup\.ts/,
     },
+    {
+      name: "firefox",
+      use: {
+        ...devices["Desktop Firefox"],
+        storageState: ".auth/standard-user.json",
+      },
+      dependencies: ["setup"],
+      testIgnore: /.*\.setup\.ts/,
+    },
   ],
 });
